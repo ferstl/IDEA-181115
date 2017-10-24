@@ -1,10 +1,10 @@
 package com.github.ferstl.test;
 
-import com.vaadin.server.SystemError;
+import com.vaadin.server.FileResource;
 
 public class Test {
 
   public static void main(String[] args) {
-    System.out.println(SystemError.class);
+    System.out.println(FileResource.class);
   }
 }
