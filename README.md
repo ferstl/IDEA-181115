@@ -18,6 +18,9 @@ mvn clean install
 The maven-compiler-plugin creates a similar command line than the one below. To run `javac` you might need to adjust the three variables `PROJECT`, `MAVEN_REPO` and `JAVA_HOME`.
 
 ```
+git clone git@github.com:ferstl/IDEA-181115.git
+cd IDEA-181115
+
 #Adjust if required
 PROJECT="."
 MAVEN_REPO="$HOME/.m2/repository"
