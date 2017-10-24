@@ -1,4 +1,21 @@
-Maven creates this command line which works fine when called from `javac` directly:
+# IDEA-181115
+*- Reproduce Issue IDEA-181115*
+
+### Build in IntelliJ
+IntelliJ 2017.2.5 generates these type of error messages when building the project:
+
+![Error Messages](/doc/error-messages.png)
+
+### Build with Maven
+```
+git clone git@github.com:ferstl/IDEA-181115.git
+cd IDEA-181115
+mvn clean install
+```
+
+### Build with javac
+
+The maven-compiler-plugin creates a similar command line than the one below. To run `javac` you might need to adjust the three variables `PROJECT`, `MAVEN_REPO` and `JAVA_HOME`.
 
 ```
 #Adjust if required
